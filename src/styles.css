@@ -1,9 +1,9 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #fff;
+  background: #1c1c1c;
 }
 .hero {
-  padding: 275px 425px;
   text-align: center;
   background-image: url("/images/header-portrait.png");
   background-size: 100%;
@@ -24,7 +24,6 @@ h2 {
 p {
   font-size: 18px;
   line-height: 30px;
-  margin: 30px 80px 50px;
 }
 
 .branding {
@@ -37,4 +36,8 @@ p {
   font-size: 14px;
   letter-spacing: 2px;
   font-family: "Montserrat", sans-serif;
+}
+.container {
+  margin: 60px;
+  max-height: 50px;
 }
