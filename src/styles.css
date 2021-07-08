@@ -1,9 +1,12 @@
 body {
   font-family: "Roboto", sans-serif;
+  color: #fff;
 }
 .hero {
   padding: 275px 425px;
   text-align: center;
+  background-image: url("/images/header-portrait.png");
+  background-size: 100%;
 }
 
 h1 {
