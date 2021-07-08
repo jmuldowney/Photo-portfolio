@@ -24,7 +24,9 @@ h2 {
 p {
   font-size: 18px;
   line-height: 30px;
+  margin: 30px 80px 50px;
 }
+
 .branding {
   border-radius: 50px;
   color: #272142;
