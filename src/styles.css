@@ -26,6 +26,8 @@ h2 {
 p {
   font-size: 18px;
   line-height: 30px;
+}
+.hero p {
   padding: 0 450px;
 }
 
@@ -39,4 +41,13 @@ p {
   font-size: 14px;
   letter-spacing: 2px;
   font-family: "Montserrat", sans-serif;
+}
+footer {
+  background: #282323;
+  padding: 20px 0;
+}
+.large-image {
+  max-width: auto;
+  max-height: 250px;
+  overflow: hidden;
 }
