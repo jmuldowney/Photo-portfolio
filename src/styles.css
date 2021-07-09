@@ -6,8 +6,14 @@ body {
 .hero {
   text-align: center;
   background-image: url("/images/header-portrait.png");
-  background-size: 100%;
-  padding-top: 275px;
+  background-color: #212121;
+  height: 900px;
+  max-width: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding-top: 325px;
   padding-bottom: 300px;
 }
 
@@ -28,7 +34,8 @@ p {
   line-height: 30px;
 }
 .hero p {
-  padding: 0 450px;
+  max-width: 450px;
+  margin: 0 auto;
 }
 
 .branding {
@@ -46,8 +53,10 @@ footer {
   background: #282323;
   padding: 20px 0;
 }
-.large-image {
-  max-width: auto;
-  max-height: 250px;
-  overflow: hidden;
+.photos {
+  margin: 100px auto;
+}
+.photos img {
+  height: 300px;
+  width: 100%;
 }
