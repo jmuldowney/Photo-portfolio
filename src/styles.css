@@ -51,7 +51,7 @@ p {
 }
 footer {
   background: #282323;
-  padding: 20px 0;
+  padding: 50px 0;
 }
 .photos {
   margin: 100px auto;
@@ -59,4 +59,19 @@ footer {
 .photos img {
   height: 300px;
   width: 100%;
+}
+.social-icons {
+  text-align: center;
+  font-size: 18px;
+}
+.social-icons i {
+  padding: 10px;
+}
+
+footer p {
+  text-align: right;
+}
+footer img {
+  max-width: 100%;
+  max-height: 25px;
 }
