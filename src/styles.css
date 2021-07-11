@@ -55,11 +55,33 @@ footer {
 }
 .photos {
   margin: 100px auto;
+  max-width: 1100px;
 }
 .photos img {
   height: 300px;
-  width: 100%;
+  padding-bottom: 40px;
 }
+.photos .small {
+  width: 320px;
+  object-fit: cover;
+}
+.photos .large {
+  width: 350px;
+  object-fit: cover;
+}
+.photos .middle {
+  margin-right: 40px;
+  margin-left: 40px;
+}
+.photos .x-large {
+  width: 380px;
+  object-fit: cover;
+}
+.photos.medium {
+  width: 340px;
+  object-fit: scale-down;
+}
+
 .social-icons {
   text-align: center;
   font-size: 18px;
