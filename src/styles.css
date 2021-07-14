@@ -3,36 +3,37 @@ body {
   color: #fff;
   background: #1c1c1c;
 }
-.hero {
-  text-align: center;
-  background-image: url("/images/header-portrait.png");
-  background-color: #212121;
-  height: 900px;
-  max-width: 100%;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  padding-top: 325px;
-  padding-bottom: 300px;
-}
-
-h1 {
+h1,
+h2,
+.branding {
   font-weight: 700;
-  font-size: 24px;
   text-transform: uppercase;
+}
+h1 {
+  font-size: 24px;
   letter-spacing: 2px;
+  padding-top: 325px;
 }
 h2 {
-  font-weight: 700;
   font-size: 72px;
-  text-transform: uppercase;
   letter-spacing: 4px;
 }
 p {
   font-size: 18px;
   line-height: 30px;
 }
+.hero {
+  text-align: center;
+  background-image: url("/images/header-portrait.png");
+  background-color: #1c1c1c;
+  height: 900px;
+  max-width: 1440px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
 .hero p {
   max-width: 450px;
   margin: 0 auto;
@@ -43,45 +44,40 @@ p {
   color: #272142;
   background: #fff;
   padding: 18px 30px;
-  text-transform: uppercase;
-  font-weight: 700;
+  margin-bottom: 300px;
   font-size: 14px;
   letter-spacing: 2px;
   font-family: "Montserrat", sans-serif;
 }
+.photos {
+  margin: 100px auto;
+}
+.photos img {
+  height: 395px;
+  padding: 20px;
+  object-fit: cover;
+}
+.photos .small {
+  width: 415px;
+}
+.photos .large {
+  width: 445px;
+}
+.photos .x-large {
+  width: 475px;
+}
+
 footer {
   background: #282323;
   padding: 50px 0;
 }
-.photos {
-  margin: 100px auto;
-  max-width: 1100px;
+footer p {
+  text-align: right;
 }
-.photos img {
-  height: 300px;
-  padding-bottom: 40px;
+footer img {
+  max-width: 100%;
+  max-height: 25px;
 }
-.photos .small {
-  width: 320px;
-  object-fit: cover;
-}
-.photos .large {
-  width: 350px;
-  object-fit: cover;
-}
-.photos .middle {
-  margin-right: 40px;
-  margin-left: 40px;
-}
-.photos .x-large {
-  width: 380px;
-  object-fit: cover;
-}
-.photos.medium {
-  width: 340px;
-  object-fit: scale-down;
-}
-
 .social-icons {
   text-align: center;
   font-size: 18px;
@@ -90,10 +86,26 @@ footer {
   padding: 10px;
 }
 
-footer p {
-  text-align: right;
-}
-footer img {
-  max-width: 100%;
-  max-height: 25px;
+@media (max-width: 576px) {
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .hero {
+    background-image: none;
+    padding-top: 50px;
+    padding-bottom: 0;
+    height: auto;
+  }
+  .hero p {
+    max-width: 250px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  .branding {
+    padding: 10px 22px;
+    font-size: 12px;
+  }
 }
