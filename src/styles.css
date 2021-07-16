@@ -53,18 +53,18 @@ p {
   margin: 100px auto;
 }
 .photos img {
-  height: 395px;
+  height: 295px;
   padding: 20px;
   object-fit: cover;
 }
 .photos .small {
-  width: 415px;
+  width: 315px;
 }
 .photos .large {
-  width: 445px;
+  width: 345px;
 }
 .photos .x-large {
-  width: 475px;
+  width: 375px;
 }
 
 footer {
@@ -93,19 +93,24 @@ footer img {
   h2 {
     font-size: 30px;
   }
-  .hero {
-    background-image: none;
-    padding-top: 50px;
-    padding-bottom: 0;
-    height: auto;
-  }
-  .hero p {
-    max-width: 250px;
-    font-size: 12px;
-    line-height: 1.5;
-  }
+
   .branding {
     padding: 10px 22px;
     font-size: 12px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .photos img {
+    height: 245px;
+  }
+  .photos .small {
+    width: 265px;
+  }
+  .photos .large {
+    width: 295px;
+  }
+  .photos .x-large {
+    width: 325px;
   }
 }
