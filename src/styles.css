@@ -2,6 +2,8 @@ body {
   font-family: "Roboto", sans-serif;
   color: #fff;
   background: #1c1c1c;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 h1,
 h2,
@@ -27,11 +29,9 @@ p {
   background-image: url("/images/header-portrait.png");
   background-color: #1c1c1c;
   height: 900px;
-  max-width: 1440px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin: 0 auto;
 }
 
 .hero p {
@@ -49,22 +49,12 @@ p {
   letter-spacing: 2px;
   font-family: "Montserrat", sans-serif;
 }
-.photos {
-  margin: 100px auto;
+.photo-section {
+  max-width: 1440px;
 }
-.photos img {
-  height: 295px;
+.photo-section img {
   padding: 20px;
-  object-fit: cover;
-}
-.photos .small {
-  width: 315px;
-}
-.photos .large {
-  width: 345px;
-}
-.photos .x-large {
-  width: 375px;
+  height: 300px;
 }
 
 footer {
@@ -97,20 +87,5 @@ footer img {
   .branding {
     padding: 10px 22px;
     font-size: 12px;
-  }
-}
-
-@media (max-width: 1199px) {
-  .photos img {
-    height: 245px;
-  }
-  .photos .small {
-    width: 265px;
-  }
-  .photos .large {
-    width: 295px;
-  }
-  .photos .x-large {
-    width: 325px;
   }
 }
