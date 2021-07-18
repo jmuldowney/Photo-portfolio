@@ -51,11 +51,12 @@ p {
   text-align: center;
 }
 .photo-section {
-  max-width: 1440px;
+  padding-top: 20px;
+  margin: 0 auto;
 }
 .photo-section img {
   padding: 20px;
-  height: 350px;
+  height: 280px;
 }
 
 footer {
@@ -77,7 +78,7 @@ footer img {
   padding: 10px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   h1 {
     font-size: 20px;
   }
@@ -97,36 +98,27 @@ footer img {
     padding: 8px 12px;
     font-size: 10px;
   }
-  .photo-section {
-    max-width: 500px;
-  }
   .photo-section img {
-    height: 175px;
-    padding: 0;
   }
 
   footer {
-    padding: 0;
+    padding: 20px;
   }
   footer p {
     text-align: center;
     font-size: 12px;
-  }
-}
-@media (max-width: 1025px) {
-  .photo-section img {
-    height: 200px;
-  }
-  .photo-section {
-    max-width: 900px;
+    line-height: 1;
   }
 }
 
-@media (max-width: 1415px) {
+@media (max-width: 991px) {
   .photo-section img {
-    height: 250px;
+    height: 175px !important;
   }
-  .photo-section {
-    max-width: 1050px;
+}
+
+@media (max-width: 1199px) {
+  .photo-section img {
+    height: 200px;
   }
 }
