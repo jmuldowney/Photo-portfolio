@@ -14,7 +14,6 @@ h2,
 h1 {
   font-size: 24px;
   letter-spacing: 2px;
-  padding-top: 325px;
 }
 h2 {
   font-size: 72px;
@@ -32,6 +31,8 @@ p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding-top: 325px;
+  padding-bottom: 300px;
 }
 
 .hero p {
@@ -44,10 +45,10 @@ p {
   color: #272142;
   background: #fff;
   padding: 18px 30px;
-  margin-bottom: 300px;
   font-size: 14px;
   letter-spacing: 2px;
   font-family: "Montserrat", sans-serif;
+  text-align: center;
 }
 .photo-section {
   max-width: 1440px;
@@ -83,9 +84,49 @@ footer img {
   h2 {
     font-size: 30px;
   }
+  .hero {
+    height: 350px;
+    padding-top: 115px;
+    padding-bottom: 100px;
+  }
+  .hero p {
+    display: none;
+  }
 
   .branding {
-    padding: 10px 22px;
+    padding: 8px 12px;
+    font-size: 10px;
+  }
+  .photo-section {
+    max-width: 500px;
+  }
+  .photo-section img {
+    height: 175px;
+    padding: 0;
+  }
+
+  footer {
+    padding: 0;
+  }
+  footer p {
+    text-align: center;
     font-size: 12px;
+  }
+}
+@media (max-width: 1025px) {
+  .photo-section img {
+    height: 200px;
+  }
+  .photo-section {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 1415px) {
+  .photo-section img {
+    height: 250px;
+  }
+  .photo-section {
+    max-width: 1050px;
   }
 }
