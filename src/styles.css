@@ -52,6 +52,8 @@ p {
 }
 .photo-section {
   padding-top: 20px;
+
+  margin: 0 auto;
 }
 .photo-section img {
   padding: 20px;
@@ -85,8 +87,8 @@ footer img {
     font-size: 30px;
   }
   .hero {
-    height: 350px;
-    padding-top: 115px;
+    height: 450px;
+    padding-top: 165px;
     padding-bottom: 100px;
   }
   .hero p {
@@ -97,7 +99,14 @@ footer img {
     padding: 8px 12px;
     font-size: 10px;
   }
+
   .photo-section img {
+    height: auto !important;
+    max-width: 100% !important;
+    padding: 20px;
+  }
+  .photo-section {
+    max-width: 1440px;
   }
 
   footer {
@@ -112,12 +121,23 @@ footer img {
 
 @media (max-width: 991px) {
   .photo-section img {
-    height: 175px !important;
+    height: 175px;
+  }
+  .photo-section {
+    max-width: 550px;
   }
 }
 
 @media (max-width: 1199px) {
   .photo-section img {
     height: 200px;
+  }
+  .photo-section {
+    max-width: 775px;
+  }
+}
+@media (min-width: 1400px) {
+  .photo-section {
+    max-width: 1150px;
   }
 }
