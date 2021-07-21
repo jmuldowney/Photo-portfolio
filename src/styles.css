@@ -117,7 +117,8 @@ footer img {
 }
 
 @media (max-width: 768px) {
-  h1 {
+  h1,
+  .about-section h1 {
     font-size: 20px;
   }
   h2 {
@@ -130,6 +131,22 @@ footer img {
   }
   .hero p {
     display: none;
+  }
+  .about-section {
+    text-align: center;
+  }
+  .about-section p {
+    font-size: 12px;
+    line-height: 1.2;
+    padding: 0 10px;
+  }
+  .about-section .social-icons,
+  .about-photo-section {
+    display: none;
+  }
+
+  .camera-section {
+    padding: 5px;
   }
 
   .branding {
