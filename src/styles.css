@@ -24,6 +24,12 @@ h1 {
 h2 {
   font-size: 24px;
 }
+h3 {
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--secondary-color);
+}
+
 p {
   font-size: 18px;
   line-height: 30px;
@@ -96,6 +102,12 @@ p {
 
 .gallery {
   margin: 150px 0;
+}
+.contact {
+  .about-section h3 {
+    font-size: 18px;
+    color: var(--secondary-color);
+  }
 }
 
 footer {
