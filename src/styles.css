@@ -103,12 +103,6 @@ p {
 .gallery {
   margin: 150px 0;
 }
-.contact {
-  .about-section h3 {
-    font-size: 18px;
-    color: var(--secondary-color);
-  }
-}
 
 footer {
   background: var(--secondary-background);
