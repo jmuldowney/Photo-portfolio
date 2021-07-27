@@ -7,7 +7,6 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #fff;
-  background: var(--primary-background);
 }
 h1,
 h2,
@@ -35,73 +34,78 @@ p {
   line-height: 30px;
   font-weight: 200;
 }
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.content-container {
+  background: var(--primary-background);
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
 .hero {
   text-align: center;
   background-image: url("/images/header-portrait.png");
-  max-width: 1440px;
-  margin: 0 auto;
   background-color: var(--primary-background);
-  height: 900px;
+  height: 800px;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
   background-repeat: no-repeat;
-  padding-top: 325px;
+  padding-top: 158px;
   padding-bottom: 300px;
 }
-
 .hero p {
   max-width: 450px;
-  margin: 0 auto;
+  margin-bottom: 48px;
 }
-
-.branding {
-  border-radius: 50px;
-  color: #272142;
-  background: #fff;
-  padding: 18px 30px;
-  font-size: 14px;
-  letter-spacing: 2px;
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  line-height: 17px;
-  text-decoration: none;
-}
-.photo-section {
-  padding-top: 20px;
-
-  margin: 0 auto;
-}
-.photo-section img {
-  padding: 20px;
-  height: 280px;
-}
-
-.about-section-content {
-  padding: 10px;
-}
-.about-section h3 {
-  font-size: 18px;
-  color: var(--secondary-color);
-}
-.about-section h1 {
+.about h1 {
   font-size: 64px;
 }
-.about-section p {
+.about h3 {
+  font-size: 18px;
+}
+.about p {
   max-width: 600px;
 }
-.about-section-content .social-icons {
-  text-align: left;
-}
-.my-camera {
+
+.about .my-camera {
   background: #2d2727;
   border-radius: 4px;
   padding: 20px;
   display: inline;
   font-weight: 700;
 }
+.about .my-camera img {
+  padding-right: 10px;
+}
 
-.gallery {
-  margin: 150px 0;
+.about .contact-button {
+  margin-top: 100px;
+}
+.contact-info {
+  margin: 140px auto 75px;
+}
+.branding {
+  border-radius: 50px;
+  color: #272142;
+  background: #fff;
+  padding: 18px 30px;
+  font-size: 14px;
+  letter-spacing: 5px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  line-height: 17px;
+}
+.photos {
+  max-width: 1152px;
+  margin: 0 auto;
+}
+.photos img {
+  height: 280px;
+  margin-top: 20px;
 }
 
 footer {
@@ -115,9 +119,6 @@ footer img {
   max-width: 100%;
   max-height: 25px;
 }
-.contact-button {
-  margin-top: 100px;
-}
 footer.social-icons {
   text-align: center;
   font-size: 18px;
@@ -130,10 +131,10 @@ footer.social-icons {
   h1 {
     font-size: 20px;
   }
-  .about-section h1 {
+  .about h1 {
     font-size: 30px;
   }
-  .about-section h2 {
+  .about h2 {
     font-size: 15px;
   }
   h2 {
