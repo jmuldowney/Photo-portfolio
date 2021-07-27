@@ -1,6 +1,6 @@
 :root {
-  --primary-background: #202020;
-  --secondary-background: #282323;
+  --primary-background: #1b1b1b;
+  --secondary-background: #202020;
   --secondary-color: #f65282;
 }
 
@@ -43,8 +43,30 @@ a {
   background: var(--primary-background);
   max-width: 1440px;
   margin: 0 auto;
-  padding-top: 50px;
 }
+nav {
+  padding: 30px 140px;
+  background: var(--secondary-background);
+}
+nav li {
+  display: inline;
+  list-style: none;
+  padding-left: 50px;
+  line-height: 2;
+}
+nav ul {
+  padding: 0;
+}
+.active,
+a:hover {
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+
+.logo {
+  max-height: 25px;
+}
+
 .hero {
   text-align: center;
   background-image: url("/images/header-portrait.png");
@@ -115,21 +137,14 @@ footer {
 footer p {
   text-align: right;
 }
-footer img {
-  max-width: 100%;
-  max-height: 25px;
-}
-footer.social-icons {
-  text-align: center;
-  font-size: 18px;
-}
+
 .social-icons i {
   padding: 10px;
 }
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 20px;
+    font-size: 30px;
   }
   .about h1 {
     font-size: 30px;
@@ -138,31 +153,27 @@ footer.social-icons {
     font-size: 15px;
   }
   h2 {
-    font-size: 30px;
+    font-size: 15px;
   }
   .hero {
-    height: 450px;
-    padding-top: 165px;
+    height: 400px;
+    padding-top: 150px;
     padding-bottom: 100px;
+    background-position: bottom center;
   }
   .hero p {
     display: none;
   }
-  .about-section {
+  .about {
     text-align: center;
   }
-  .about-section p {
+  .about p {
     font-size: 12px;
     line-height: 1.2;
     padding: 0 10px;
   }
 
-  .about-section .social-icons,
-  .about-photo-section {
-    display: none;
-  }
-
-  .camera-section {
+  .my-camera {
     padding: 5px;
   }
   .contact-button {
@@ -173,13 +184,21 @@ footer.social-icons {
     font-size: 10px;
   }
 
-  .photo-section img {
+  .photos img {
     height: auto !important;
     max-width: 100% !important;
     padding: 20px;
   }
-  .photo-section {
-    max-width: 1440px;
+  nav {
+    padding: 10px 20px;
+  }
+  nav li {
+    padding-left: 20px;
+    line-height: 1;
+    font-size: 12px;
+  }
+  .logo {
+    max-height: 12px;
   }
 
   footer {
@@ -193,24 +212,28 @@ footer.social-icons {
 }
 
 @media (max-width: 991px) {
-  .photo-section img {
+  .photos img {
     height: 175px;
   }
-  .photo-section {
-    max-width: 550px;
+  .about.photos img {
+    height: auto !important;
+    max-width: 100% !important;
+  }
+  .photos {
+    max-width: 200px;
   }
 }
 
 @media (max-width: 1199px) {
-  .photo-section img {
+  .photos img {
     height: 200px;
   }
-  .photo-section {
+  .photos {
     max-width: 775px;
   }
 }
 @media (min-width: 1400px) {
-  .photo-section {
+  .photos {
     max-width: 1150px;
   }
 }
