@@ -39,11 +39,6 @@ a {
   color: #fff;
 }
 
-.content-container {
-  background: var(--primary-background);
-  max-width: 1440px;
-  margin: 0 auto;
-}
 nav {
   padding: 30px 140px;
   background: var(--secondary-background);
@@ -56,6 +51,18 @@ nav li {
 }
 nav ul {
   padding: 0;
+}
+footer {
+  background: var(--secondary-background);
+  padding: 30px 140px;
+}
+footer p {
+  text-align: right;
+}
+.content-container {
+  background: var(--primary-background);
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .active,
 a:hover {
@@ -76,12 +83,11 @@ a:hover {
   background-position: center;
   overflow: hidden;
   background-repeat: no-repeat;
-  padding-top: 158px;
-  padding-bottom: 300px;
+  padding-top: 240px;
 }
 .hero p {
   max-width: 450px;
-  margin-bottom: 48px;
+  margin-bottom: 58px;
 }
 .about h1 {
   font-size: 64px;
@@ -92,7 +98,6 @@ a:hover {
 .about p {
   max-width: 600px;
 }
-
 .about .my-camera {
   background: #2d2727;
   border-radius: 4px;
@@ -103,9 +108,14 @@ a:hover {
 .about .my-camera img {
   padding-right: 10px;
 }
-
 .about .contact-button {
   margin-top: 100px;
+}
+.social-icons-about {
+  text-align: left;
+}
+.social-icons-about i {
+  padding: 10px;
 }
 .contact-info {
   margin: 140px auto 75px;
@@ -130,30 +140,35 @@ a:hover {
   margin-top: 20px;
 }
 
-footer {
-  background: var(--secondary-background);
-  padding: 25px 0;
+.social-icons {
+  text-align: center;
 }
-footer p {
-  text-align: right;
-}
-
 .social-icons i {
   padding: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   h1 {
-    font-size: 30px;
-  }
-  .about h1 {
-    font-size: 30px;
-  }
-  .about h2 {
-    font-size: 15px;
+    font-size: 25px;
   }
   h2 {
     font-size: 15px;
+  }
+  nav {
+    padding: 10px 20px;
+  }
+  nav li {
+    padding-left: 18px;
+    line-height: 1;
+    font-size: 12px;
+  }
+  footer {
+    padding: 20px;
+  }
+  footer p {
+    text-align: center;
+    font-size: 12px;
+    line-height: 1;
   }
   .hero {
     height: 400px;
@@ -164,6 +179,13 @@ footer p {
   .hero p {
     display: none;
   }
+  .about h1 {
+    font-size: 30px;
+  }
+  .about h3,
+  h3 {
+    font-size: 12px;
+  }
   .about {
     text-align: center;
   }
@@ -171,6 +193,12 @@ footer p {
     font-size: 12px;
     line-height: 1.2;
     padding: 0 10px;
+  }
+  .about .contact-button {
+    margin-top: 50px;
+  }
+  .my-camera img {
+    max-height: 20px;
   }
 
   .my-camera {
@@ -183,57 +211,26 @@ footer p {
     padding: 8px 12px;
     font-size: 10px;
   }
-
+  .photos {
+    padding: 40px;
+  }
   .photos img {
     height: auto !important;
     max-width: 100% !important;
-    padding: 20px;
-  }
-  nav {
-    padding: 10px 20px;
-  }
-  nav li {
-    padding-left: 20px;
-    line-height: 1;
-    font-size: 12px;
   }
   .logo {
     max-height: 12px;
   }
-
-  footer {
-    padding: 20px;
-  }
-  footer p {
-    text-align: center;
-    font-size: 12px;
-    line-height: 1;
-  }
 }
 
 @media (max-width: 991px) {
-  .photos img {
-    height: 175px;
+  .about {
+    text-align: center;
   }
-  .about.photos img {
-    height: auto !important;
-    max-width: 100% !important;
+  .about p {
+    margin: 0 auto;
   }
-  .photos {
-    max-width: 200px;
-  }
-}
-
-@media (max-width: 1199px) {
-  .photos img {
-    height: 200px;
-  }
-  .photos {
-    max-width: 775px;
-  }
-}
-@media (min-width: 1400px) {
-  .photos {
-    max-width: 1150px;
+  .about-social-icons {
+    text-align: center;
   }
 }
